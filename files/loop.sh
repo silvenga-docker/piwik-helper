@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f /script.sh ] ; then
+if [ ! -f /script.sh ]; then
     echo "/script.sh must exist. Will exit now."
     exit 1
 fi
