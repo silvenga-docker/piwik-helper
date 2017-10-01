@@ -11,3 +11,7 @@ RUN \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     "s3cmd=1.5.0~rc1-2" \
     && rm -r /var/lib/apt/lists/*
+
+COPY files/loop.sh /loop.sh
+
+CMD [ "/bin/bash", "/loop.sh" ]
