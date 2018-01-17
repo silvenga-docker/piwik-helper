@@ -1,4 +1,4 @@
-FROM registry.silvenga.com/piwik-fork:1.05
+FROM piwik:3.3.0-apache
 
 LABEL maintainer="Mark Lopez <m@silvenga.com>"
 
